@@ -1,0 +1,607 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  
+}
+
+/* for nav style*/
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+  margin: 0; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navbar h1 {
+  font-size: 0.96em;
+}
+
+/* Searchb style */
+#searchbar {
+  display: flex;
+  position:center;
+  width: 60%;
+
+}
+
+#search {
+  display: flex;
+  position:center;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 80%; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* links style */
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  margin-left: 30px;
+}
+
+.navbar ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: #C59039;
+}
+
+
+#home {
+  background-color: #e5af0e41;
+ 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.rectangle1 {
+  background-color: #F0F0F0;
+  background-size: cover;
+  background-position: center;
+  width: 38rem;
+  display: flex;
+  justify-content: start;
+  margin-top: 2rem;
+  margin-left: 0;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.dropbtn:hover, .dropbtn1:hover, .dropbtn2:hover {
+  transform: scale(1.1); 
+}
+.dropbtn {
+  background-image: url('img/book1.png'); 
+}
+.dropbtn1 {
+  background-image: url('img/book2.png'); 
+}
+.dropbtn2 {
+  background-image: url('img/book3.png');
+}
+.dropbtn, .dropbtn1, .dropbtn2 {
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 10px #ffffff,
+               0px 8px 20px #ffffff,
+               8px 8px 40px #ffffff,
+               8px 8px 88px #ffffff;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-position: center;
+  width: 12.5em;
+  height: 12.5em;
+  transition: transform 0.3s ease;
+  
+}
+.dropdown-content, .dropdown-content1, .dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a, .dropdown-content1 a, .dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover, .dropdown-content1 a:hover, .dropdown-content2 a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content,.dropdown1:hover .dropdown-content1, .dropdown2:hover .dropdown-content2   {
+  display: block;
+}
+.dropdown:hover .dropbtn, .dropdown1:hover .dropbtn1, .dropdown2:hover .dropbtn2 {
+  background-color: #3e8e4100;
+}
+#JRU {
+  width: 30rem; 
+  height: auto; 
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+#home p {
+  margin-left: 2rem;
+}
+#home h1{
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+#jumpTo{
+  margin-left: 2rem;
+  font-size: large;
+}
+#JRU:hover{
+  transform: scale(1.1); 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.rectangle {
+  width: 45vw; 
+  height: 40vw; 
+  max-width: 42rem; 
+  max-height: 27em; 
+  background-color: #ffffff;
+  border-radius: 3%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  position: absolute; 
+  top: calc(1rem + 15%); 
+  left: 50rem;
+  z-index: 1; 
+  padding: 1.5rem;
+  justify-content: center;
+  z-index: 1; 
+  padding: 1.5rem;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#btnReadMore {
+  justify-content: center;
+  color: #ffffff;  
+  background-color: #162E5A; 
+  font-size: 1.2rem; 
+  padding: 12px 24px; 
+  cursor: pointer;
+  border: none; 
+  border-radius: 5px; 
+  transition: color 0.3s, border-color 0.3s; 
+}
+#btnReadMore:hover {
+  color: #ffffff; 
+  background-color:#C59039;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform: scale(1.1); 
+}
+#section
+.footer{
+  justify-content: center;
+  align-items: center;
+}
+#outro-content{
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1523px) {
+  .rectangle {
+    width: 35vw; 
+    height: 39vw; 
+    max-width: 32rem; 
+    max-height: 39em; 
+    position: absolute; 
+    top: calc(1rem + 20%); 
+    left: 48rem;
+
+    padding: 1.5rem;
+    justify-content: center;
+    padding: 1.5rem;
+
+  }
+}
+
+@media (max-width: 15236px) {
+  .rectangle {
+    width: 35vw; 
+    height: 305w; 
+    max-width: 32rem; 
+    max-height: 27em; 
+    top: calc(1rem + 15%); 
+  }
+
+}
+@media (max-width: 1266px) {
+  .rectangle {
+    width: 35vw; 
+    height: 35vw; 
+    max-width: 32rem; 
+    max-height: 27em; 
+    background-color: #EDEDDD;
+    top: calc(1rem + 15%); 
+    left: 41rem;
+  
+    justify-content: center;
+   
+   
+    
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+}
+
+@media (max-width: 1232px) {
+  .rectangle {
+    width: 35vw; 
+    height: 58vw; 
+    max-width: 29rem; 
+    max-height: 31em; 
+    top: calc(1rem + 20%); 
+    left: 41rem;
+ 
+   
+    
+    
+
+  }
+}
+
+@media (max-width: 1080px) {
+  body{
+    display: block;
+    justify-content: center;
+  }
+  .rectangle{
+    margin-top: 5.5rem;
+    left: 1rem;
+  
+    width: 90vw; 
+    height: 40vw; 
+    max-width: 90rem; 
+    max-height:100em; 
+   
+  }
+ 
+  .rectangle1{
+    
+    width: 38rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 38rem;
+  
+  }
+  
+}
+
+
+@media (max-width: 744px) {
+  body{
+    display: block;
+    justify-content: space-evenly;
+  }
+  .navbar {
+      flex-direction: column;
+     
+     
+  }
+
+  .navbar h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      display: inline;
+      justify-content: start;
+      
+  }
+
+  .navbar ul {
+      flex-direction: row;
+      align-items: center;
+      align-items: center;
+      
+      width: 100%;
+      
+  }
+
+  .navbar ul li {
+      margin: 10px 0;
+      width: 100%;
+      
+  }
+
+  .navbar ul li a {
+      display: block;
+      width: 100%;
+      margin-right: 1rem;
+
+  }
+
+  #searchbar {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      
+  }
+ 
+
+
+  .rectangle{
+    margin-top: 15.5rem;
+    left: 1rem;
+  
+    width: 90vw; 
+    height: 60vw; 
+    max-width: 80rem; 
+    max-height: 50em; 
+   
+  }
+
+  
+ 
+  .rectangle1{
+    
+    width: 38rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 38rem;
+  
+  }
+
+
+  .dropbtn, .dropbtn1, .dropbtn2 {
+    width: 9em;
+    height: 9em;
+    font-size: 14px;
+    padding: 12px;
+  }
+  
+  .dropdown-content, .dropdown-content1, .dropdown-content2 {
+    min-width: 140px;
+  }
+}
+
+
+@media (max-width: 742px) {
+  body{
+    display: block;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar ul {
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      
+  }
+
+
+  .rectangle{
+    margin-top: 12.5rem;
+    left: 2.5rem;
+  
+    width: 80vw; 
+    height: 60vw; 
+    max-width: 80rem; 
+    max-height: 70em; 
+   
+  }
+ 
+  .rectangle1{
+    
+    width: 31rem;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .dropbtn, .dropbtn1, .dropbtn2 {
+    width: 9em;
+    height: 9em;
+    font-size: 14px;
+    padding: 12px;
+  }
+  
+  .dropdown-content, .dropdown-content1, .dropdown-content2 {
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 634px) {
+  body{
+    display: block;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .rectangle{
+    margin-top: 24rem;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+}
+@media (max-width: 589px) {
+  .rectangle{
+    margin-top: 25.5rem;
+    margin-left: 1rem;
+    left: 1rem;
+  
+    width: 80vw; 
+    height: 80vw; 
+    max-width: 100rem; 
+    max-height: 100em; 
+
+   
+  }
+ 
+  .rectangle1{
+    
+    width: 25rem;
+    display: flex;
+    justify-content: start;
+    margin-top: 36rem;
+  }
+  #JRU{
+    width: 25rem;
+  }
+}
+@media (max-width: 525px) {
+  .rectangle{
+    margin-top: 26.5rem;
+    left: 1rem;
+  
+    width: 80vw; 
+    height: 90vw; 
+    max-width: 100rem; 
+    max-height: 100em; 
+   
+  }
+  .rectangle1{
+    
+    width: 23rem;
+  margin-top: 38rem;
+  }
+}
+@media (max-width: 480px) {
+  .rectangle{
+    margin-top: 25.5rem;
+    margin-left: 0.5rem;
+    margin-right: 1.5rem;
+    width: 79vw; 
+    height: 135vw; 
+    max-width: 100rem; 
+    max-height: 100em; 
+   
+  }
+ .rectangle1{
+    
+    width: 23rem;
+  margin-top: 50rem;
+  }
+  #JRU{
+    width: 20rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .rectangle{
+    margin-top: 25.5rem;
+    justify-content: start;
+  
+    width: 79vw; 
+    height: 155vw; 
+    max-width: 100rem; 
+    max-height: 100em; 
+   
+  }
+ .rectangle1{
+    
+    width: 20.1rem;
+  margin-top: 50rem;
+  flex-direction: column;
+  justify-content: center;
+  }
+  .dropbtn, .dropbtn1, .dropbtn2 {
+    margin: 0.2rem;
+  }
+  #JRU{
+    width: 19rem;
+  }
+}
+@media (max-width: 377px) {
+  .rectangle{
+    margin-top: 27.5rem;
+    left: 1rem;
+  
+    width: 79vw; 
+    height: 175vw; 
+    max-width: 100rem; 
+    max-height: 100em; 
+   
+  }
+  .rectangle1{
+  width: 15.1rem;
+  margin-top: 50rem;
+  
+  flex-direction: column;
+  justify-content: center;
+  
+  }
+  .dropbtn .dropbtn2 .dropbtn3  {
+    padding: 6rem;
+    justify-content: center;
+    
+    
+   
+  }
+}
+@media (max-width: 351px) {
+  .rectangle{
+    margin-top: 28.5rem;
+    left: 1rem;
+  
+    width: 75vw; 
+    height: 197vw; 
+    max-width: 100rem; 
+    max-height: 100em; 
+  
+  }
+}
+@media (max-width: 342px) {
+  rectangle{
+    margin-top: 28.5rem;
+    left: 1rem;
+  
+    width: 79vw; 
+    height: 100rem; 
+    max-width: 100rem; 
+    max-height: 100rem; 
+  
+  }
+  .rectangle1{
+    margin-top: 54rem;
+  }
+}
+@media (max-width: 300px) {
+  .rectangle{
+    margin-top: 29.5rem;
+    width: 75vw; 
+    height: 200vw; 
+    max-width: 100rem; 
+    max-height: 100em; 
+  }
+}
